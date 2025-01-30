@@ -63,7 +63,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['colors'])) {
         if ($black === 4) {
             $feedback = "<p>Hai indovinato la sequenza in " . $_SESSION['attempts'] . " tentativi!</p>";
             session_destroy(); // Termina la partita
-        } elseif ($_SESSION['attempts'] >= $_SESSION['max_attempts']) {
+        } elseif ($_SESSION['attempts'] >= 10) {
             $feedback = "<p>Hai raggiunto il numero massimo di tentativi. La sequenza era: " . implode(", ", $_SESSION['combinazione']) . "</p>";
             session_destroy(); // Termina la partita
         } else {
@@ -115,8 +115,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['colors'])) {
             <tr>
                 <th>Tentativo</th>
                 <th>Colori Inseriti</th>
-                <th>Neri</th>
-                <th>Bianchi</th>
+                <th>Colori in posizione corretta</th>
+                <th>Colori presenti ma in posizione non corretta</th>
             </tr>
             <?php for ($i = 0; $i < count($_SESSION['history']); $i++): ?>
                 <tr>
