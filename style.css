@@ -1,0 +1,91 @@
+/* Stile generale */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+
+/* Stile del form */
+form {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+select:hover {
+    border-color: #218838;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Stile del feedback */
+div {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+div p {
+    margin: 10px 0;
+}
+
+/* Stile della tabella dei tentativi */
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+img {
+    vertical-align: middle;
+    width: 50px;
+    margin: 5px;
+}
+
